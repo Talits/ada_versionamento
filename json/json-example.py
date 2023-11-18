@@ -2,7 +2,7 @@ import json
 from types import SimpleNamespace
 import requests
 
-r = requests.get('https://api.github.com/users/Talits')
+r = requests.get('https://api.github.com/users/EdgarBrabo')
 result = json.loads(r.text, object_hook=lambda d: SimpleNamespace(**d))
 
 print(result.name)
